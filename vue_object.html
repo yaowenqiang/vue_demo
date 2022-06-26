@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue js</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <hello></hello>
+</div>
+<script>
+    Vue.component('hello', {
+        template: '<h1>hello</h1>'
+    });
+    new Vue({
+        el: '#app',
+        data: {
+            title: 'title'
+        }
+    });
+</script>
+</body>
+</html>
