@@ -13,3 +13,14 @@ VueJS Project Templates
   + browserify simple
 
 > vue init webpack-simple vue-cli
+
+## nrm
+
+> sudo npm install --global nrm
+> nrm ls
+> nrm use taobao
+> 
+
+
+## npx
+
