@@ -13,14 +13,15 @@
             // name: [String, Array]
             // name: [String]
             name: {
-                // type: String,
-                type: Object,
-                required: true,
-                default: function () {
-                    return {
-                        name: 'Max'
-                    }
-                }
+                type: String,
+                // type: Object,
+                // required: true,
+                // default: function () {
+                //     return {
+                //         name: 'Max'
+                //     }
+                // }
+                default: "default name"
             }
         },
         methods: {
@@ -28,8 +29,8 @@
                 return this.name.split('').reverse().join('');
             },
             resetName() {
-                // this.name = 'Max';
-                this.$emit('nameWasReset', this.name)
+                // this.name = 'default name';
+                this.$emit('nameWasReset', this.name + " changed")
             }
         }
     }
